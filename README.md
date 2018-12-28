@@ -8,7 +8,7 @@ Uses:
 
 - HTML5
 - Google Fonts
-- CSS - Flexbox
+- CSS
 - JS
 - Typescript
 - localStorage (Web Storage API)
