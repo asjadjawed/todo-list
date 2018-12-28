@@ -1,0 +1,108 @@
+body {
+  font-family: 'Teko', sans-serif;
+  font-size: 10px;
+  background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+}
+
+#container {
+  min-width: 280px;
+  background-color: aliceblue;
+  width: 70%;
+  margin: 50px auto;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 1);
+}
+
+h1 {
+  background-color: cornflowerblue;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 1);
+  padding: 0px 20px;
+  color: aliceblue;
+  margin: 0;
+  font-size: 2.5rem;
+  line-height: 5rem;
+  letter-spacing: 0.25rem;
+}
+
+#addShow {
+  float: right;
+  cursor: pointer;
+}
+
+#taskAdder {
+  width: 100%;
+  background-color: aliceblue;
+  outline: none;
+  font-family: inherit;
+  font-size: 2rem;
+  padding-left: 17px;
+  box-sizing: border-box;
+  line-height: 3rem;
+  border: solid 3px transparent;
+}
+
+#taskAdder:focus {
+  border: solid 3px lightskyblue;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  font-size: 1.8rem;
+  background-color: lightblue;
+  cursor: pointer;
+  line-height: 2.5rem;
+}
+
+li:nth-child(2n) {
+  background-color: aliceblue;
+}
+
+li input {
+  background-color: aliceblue;
+  width: 100%;
+  outline: none;
+  display: inline-block;
+  font-family: inherit;
+  font-size: 1.8rem;
+  padding-left: 17px;
+  box-sizing: border-box;
+  height: 2.5rem;
+  border: solid 3px lightskyblue;
+}
+
+.center {
+  padding: 0px 20px;
+  word-wrap: break-word;
+  display: inline-block;
+}
+
+.delete,
+.edit {
+  display: inline-block;
+  width: 40px;
+  font-size: 1rem;
+  text-align: center;
+  box-sizing: border-box;
+  border-radius: 15%;
+  margin: 1px;
+  padding-top: 0.5%;
+}
+
+.delete {
+  background-color: red;
+  color: aliceblue;
+}
+
+.edit {
+  background-color: seagreen;
+  color: aliceblue;
+}
+
+.completed {
+  color: slategrey;
+  text-decoration: line-through;
+}

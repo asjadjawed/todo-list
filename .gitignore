@@ -1,0 +1,8 @@
+__pycache__
+.directory
+.idea
+.ipynb_checkpoints
+.vscode
+node_modules
+IGMs
+recoll-webui-master
