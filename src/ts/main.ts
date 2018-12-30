@@ -10,7 +10,6 @@ let removeFadeOut = (el: HTMLElement, speed: number) => {
   setTimeout(() => {
     const parent = el.parentNode as HTMLElement;
     parent.removeChild(el);
-
   }, speed);
 };
 
@@ -57,7 +56,7 @@ class MainList {
       removeFadeOut(aTask.liTask, 200);
       // const liParent = aTask.liTask.parentElement as HTMLUListElement;
       // liParent.removeChild(aTask.liTask);
-      this.content = this.content.filter((t) => t !== aTask);
+      this.content = this.content.filter(t => t !== aTask);
       this.taskSave();
     });
 
@@ -134,7 +133,6 @@ class Task {
     this.liInput.type = "text";
     this.liInput.classList.add("liInput");
     this.liTask.appendChild(this.liInput);
-
   }
 }
 
@@ -146,12 +144,12 @@ if (!localStorage.getItem("content")) {
 if (mainList.content) {
   const data = localStorage.getItem("content") as string;
   const loadedContent = JSON.parse(data) as Task[];
-  loadedContent.forEach((t) => {
+  loadedContent.forEach(t => {
     mainList.addTask(new Task(t.text, t.done.valueOf()));
   });
 }
 
-adder.addEventListener("keypress", (k) => {
+adder.addEventListener("keypress", k => {
   if (k.key === "Enter" && adder.value !== "") {
     mainList.addTask(new Task(adder.value));
     adder.value = "";
